@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<title>
+</title>
+  
+
+</head>
+<body>
+  <div class="wrapper collapse color-system font-system">
+    <nav class="container">
+    </nav>
+    <header class="container">
+      <header-component></header-component>
+    </header>
+    <main class="container">
+      <h1 class="color-header font-header">Titulo desde el fichero json</h1>
+
+<p class="color-content font-content">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus perspiciatis quasi non ullam praesentium laudantium eaque nesciunt ipsam. Porro quidem sed delectus libero id illo temporibus doloremque consequatur impedit.
+</p>
+<p class="color-content font-content">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo neque sed vehicula lobortis. Morbi tortor turpis, tristique ac eros in, venenatis euismod lectus. Praesent elementum mauris non mi consectetur, ut posuere velit pharetra. Nullam vel tellus sodales, tincidunt felis at, laoreet urna. Nunc dignissim maximus dolor, vitae tempus metus pharetra quis. Cras ultricies eleifend nisi, at sagittis est ullamcorper eleifend. Praesent a lobortis dui. Sed accumsan, nibh in finibus volutpat, velit enim rhoncus arcu, at interdum nisl justo at dui. Integer ullamcorper risus eu aliquet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin odio augue, fringilla a mauris ut, rutrum vestibulum lacus. Quisque lobortis felis ligula, et tincidunt dolor viverra ullamcorper. Morbi eu ex suscipit, ultricies libero nec, commodo eros. Duis posuere iaculis bibendum. Pellentesque placerat justo in commodo dapibus. Morbi imperdiet sollicitudin vestibulum.
+</p>
+
+    </main>
+
+    <footer class="container">
+      <span class="color-content font-content">footer</span>
+    </footer>
+  </div>
+  <script>
+  // HACK(keanulee): The Redux package assumes `process` exists - mock it here before
+  // the module is loaded.
+  window.process = {
+    env: {
+      NODE_ENV: 'production'
+    }
+  };
+</script>
+
+<script type="module" src="/assets/js/main.js"></script>
+
+</body>
+</html>

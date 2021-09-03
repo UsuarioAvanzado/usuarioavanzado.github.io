@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<title>
+</title>
+  
+
+</head>
+<body>
+
+  <div class="wrapper collapse color-system font-system">
+
+    <nav class="container">
+    </nav>
+    <header class="container">
+      <span class="color-content font-header">Header</span>
+    </header>
+    <main class="container">
+      <h1 class="color-header">404 Page</h1>
+    </main>
+
+    <footer class="container">
+      <span class="color-content font-content">footer</span>
+    </footer>
+  </div>
+  <script>
+  // HACK(keanulee): The Redux package assumes `process` exists - mock it here before
+  // the module is loaded.
+  window.process = {
+    env: {
+      NODE_ENV: 'production'
+    }
+  };
+</script>
+
+<script type="module" src="/assets/js/main.js"></script>
+
+</body>
+</html>

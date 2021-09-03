@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../assets/js/components/wrapper-component/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,IAAI,gBAAgB,EAAE,MAAM,iBAAiB,CAAC","sourcesContent":["export { Component as WrapperComponent } from './src/component';\n"]}

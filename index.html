@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/global.css">
+<title>
+</title>
+  
+
+</head>
+<body>
+  <div class="wrapper collapse color-system font-system">
+    <nav class="container">
+      <collapse-expand class="collapse-expand"></collapse-expand>
+
+<ul class="sections">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">Abut</a></li>
+</ul>
+
+<ul class="components">
+  <li>
+    <span>Apariencia</span>
+    <toggle-theme></toggle-theme>
+  </li>
+  <li>
+    <span>Cookies</span>
+    <toggle-theme></toggle-theme>
+  </li>
+</ul>
+
+    </nav>
+    <header class="container">
+      <header-component>
+        <h1 slot="header" class="color-header--reverse font-header">Titulo nuevo</h1>
+        <p slot="content" class="color-content--reverse font-content">
+            breve texto extraido del ultimo post
+        </p>
+      </header-component>
+    </header>
+    <main class="container">
+        <test-component>
+          <h1 slot="header" class="color-header font-header">cabecera</h1>
+          <p slot="content" class="color-content font-content">contenido del componente test-component</p>
+        </test-component>
+    </main>
+      <footer class="container">
+</footer>
+
+  </div>
+    <script>
+  // HACK(keanulee): The Redux package assumes `process` exists - mock it here before
+  // the module is loaded.
+  window.process = {
+    env: {
+      NODE_ENV: 'production'
+    }
+  };
+</script>
+
+<script type="module" src="/assets/js/main.js"></script>
+
+</body>
+</html>
