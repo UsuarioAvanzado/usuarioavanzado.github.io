@@ -1,1 +1,0 @@
-{"version":3,"file":"actions.js","sourceRoot":"","sources":["../../../../assets/js/store/actions.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,SAAS,GAAG;IACvB,IAAI,EAAG,aAAa;CACrB,CAAA","sourcesContent":["export const toggleNav = {\n  type : '@nav/toggle'\n}\n"]}
